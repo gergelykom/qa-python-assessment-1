@@ -71,7 +71,7 @@ def one(input1, input2):
 def two(input):
 	start = 'bert'
 	end = 'bert'
-
+	
 	return input[input.find(start):input.find(end)]
 
 
@@ -113,13 +113,12 @@ def three(arg1):
     # Given a string seperate the string into the individual numbers present, then add each digit of each number to get a final value for each number
 
 	# String example = "55 72 86"
-	
+
 	# "55" will = the integer 10
 	# "72" will = the integer 9
 	# "86" will = the integer 14
-	
 	# You then need to return the highest value, in the example above this would be 14.
-	 
+
     # <EXAMPLES>
 
 	# four("55 72 86") → 14
@@ -132,6 +131,8 @@ def three(arg1):
 
 def four(arg1):
 	return 0
+
+
 
 	# <QUESTION 5>
 
@@ -180,7 +181,11 @@ def five(input):
 
 
 def six(input):
-    return False
+	for i in range(0, len(input)):
+		if 'ei' in input:
+			return True
+		else:
+			return True
 
 	# <QUESTION 7>
 
@@ -243,11 +248,10 @@ def eight(input):
 	# Take a look at the documentation for Strings, List and range.
 
 def nine(inputString, char):
+	
 	x = inputString.replace(' ', '')
-
-	return x.find(char)
-
-
+	y = x.find(char)
+	return y
 
 
 	# <QUESTION 10>
